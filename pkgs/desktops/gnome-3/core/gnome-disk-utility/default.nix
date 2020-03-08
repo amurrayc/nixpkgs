@@ -5,11 +5,11 @@
 
 stdenv.mkDerivation rec {
   pname = "gnome-disk-utility";
-  version = "3.35.91";
+  version = "3.36.0";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-disk-utility/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
-    sha256 = "1hni4j013i56pblbcwj8a2j88r8alvb3cr2cajj1lvf5yvnw09yb";
+    sha256 = "00xi9m8vklwska1k3sdcfyba3mhwx7clrh522dgksn7v0ja9l1zl";
   };
 
   nativeBuildInputs = [
