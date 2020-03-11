@@ -2,11 +2,11 @@
 
 stdenv.mkDerivation rec {
   pname = "gnome-menus";
-  version = "3.35.3";
+  version = "3.36.0";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
-    sha256 = "02mc4n3cnalp0fywgrbkmi9zdy79z1cnqhdzdzjfw7mhj9yj6y5n";
+    sha256 = "07xvaf8s0fiv0035nk8zpzymn5www76w2a1vflrgqmp9plw8yd6r";
   };
 
   makeFlags = [
