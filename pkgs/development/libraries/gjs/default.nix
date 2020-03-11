@@ -21,11 +21,11 @@
 
 stdenv.mkDerivation rec {
   pname = "gjs";
-  version = "1.63.92";
+  version = "1.64.0";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gjs/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
-    sha256 = "11w5g7s4654m5cm29m11s2cmcpa602j6ihhjp0r80fxf3g6l51vd";
+    sha256 = "0vynivp1d10jkxfcgb5vcjkba5dvi7amkm8axmyad7l4dfy4qf36";
   };
 
   outputs = [ "out" "dev" "installedTests" ];
@@ -53,10 +53,6 @@ stdenv.mkDerivation rec {
   mesonFlags = [
     "-Dprofiler=disabled"
   ];
-
-  # configureFlags = [
-  #   "--enable-installed-tests"
-  # ];
 
   postPatch = ''
     for f in installed-tests/*.test.in; do
