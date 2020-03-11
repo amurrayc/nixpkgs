@@ -5,11 +5,11 @@
 
 stdenv.mkDerivation rec {
   pname = "gnome-keyring";
-  version = "3.35.90";
+  version = "3.36.0";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-keyring/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
-    sha256 = "1x4mkmbwmxm9h2ndrpdz0346dpc8hdri9fq92qkki7s8d280r7kj";
+    sha256 = "11sgffrrpss5cmv3b717pqlbhgq17l1xd33fsvqgsw8simxbar52";
   };
 
   outputs = [ "out" "dev" ];
