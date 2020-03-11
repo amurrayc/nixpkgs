@@ -23,7 +23,7 @@
 
 let
   pname = "gnome-panel";
-  version = "3.35.2";
+  version = "3.36.0";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
@@ -31,7 +31,7 @@ in stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "1x2382wjx4272pyja4wr4vdslwh92b5rd9h22w45n3pmxzf3ypqc";
+    sha256 = "08x0xjrg36h6x5c68w5jf8gg57767p2m3ljgzyglx2ij0nfbpc8d";
   };
 
   # make .desktop Exec absolute
